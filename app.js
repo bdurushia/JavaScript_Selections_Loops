@@ -120,10 +120,10 @@ console.log("\nEXERCISE 5:\n==========\nCustomized FIZZBUZZ\n");
 
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
 let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-let x = Math.round(Math.random() * (1000 - 1) + 1);
-let start = Math.round(Math.random() * (10 - 1) + 1);
+let start = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let end = Math.round(Math.random() * (1000 - 100) + 100); // creates a random number between 100 and 1000
 
-for (let i = start; i <= x; i++) {
+for (let i = start; i <= end; i++) {
     console.log(
         ((i % fizzDivisor ? '' : fizz) + (i % buzzDivisor ? '' : buzz) || i)
     )
