@@ -60,7 +60,7 @@ console.log("While Loop - FizzBuzz")
 
 var num = 1;
 
-while (num < 100) {
+while (num <= 100) {
     if (num % 15 == 0) {
         console.log(fizz + buzz)
     }
@@ -95,7 +95,7 @@ do {
         console.log(num)
     }
     num++
-} while (num < 100)
+} while (num <= 100)
 
 // Exercise 4 Section
 console.log("\nEXERCISE 4:\n==========\n");
@@ -104,7 +104,7 @@ let value = Math.round((Math.random() * 500)); // creates a random number betwee
 let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
 let foundValue = false;
 
-for (let i = 0; i < n; i++) {
+for (let i = 0; i <= n; i++) {
     if (value == i) {
         console.log(`Found value! It is ${i}`)
         foundValue = true;
